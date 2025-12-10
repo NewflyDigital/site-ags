@@ -1,0 +1,268 @@
+.backgroundimg {
+  background-image: url(/static/images/banner-quemsomos.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #ffffff;
+  height: 70vh;
+}
+
+.background2 {
+  background-color: #efefef;
+  width: 100%;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1E1E1E;
+  flex-direction: column;
+}
+
+.backgroundimg span {
+  font-size: 14px;
+}
+
+.background {
+  background-color: #ffffff;
+  width: 100%;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1E1E1E;
+  flex-direction: column;
+}
+
+.linha {
+  background-color: #1E1E1E;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.interno {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 80rem;
+}
+
+.titulo {
+  font-family: Montserrat;
+  letter-spacing: 2rem;
+  font-size: 32px;
+}
+
+.caixa {
+  z-index: 999;
+  width: 100%;
+  max-width: 85rem;
+  display: flex;
+  flex-direction: row;
+  background-color: #F2F4F5;
+  color: #1E1E1E;
+  padding: 5rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.box {
+  width: 100%;
+  max-width: 35rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.box h3 {
+  font-family: Montserrat;
+  font-size: 54px;
+  color: #2e9845;
+}
+
+.box p {
+  font-family: Montserrat;
+  font-size: 16px;
+  color: #464646;
+}
+
+.interno2 {
+  width: 100%;
+  max-width: 80rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.interno2 img {
+  margin-top: 1.5rem;
+  width: 100%;
+  max-width: 5rem;
+}
+
+
+.imagem4 {
+  width: 100%;
+  max-width: 60rem;
+  z-index: 1234;
+}
+
+.valores {
+  width: 100%;
+  max-width: 24rem;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 2rem;
+  background-color: transparent;
+  border: 1px solid #2e9845;
+  border-radius: 2rem 2rem 2rem 0rem;
+}
+
+.valores:hover {
+  background-color: #2e9845;
+  border: 1px solid #2e9845;
+}
+
+.valores:hover h3 {
+  color: #ffffff;
+}
+
+.valores:hover p {
+  color: #ffffff;
+}
+
+
+.valores h3 {
+  color: #2e9845;
+  margin-bottom: 1rem;
+}
+
+.valores p {
+  font-size: 16px;
+  color: #464646;
+}
+
+.background3 {
+  background-image: url(/static/images/bakcground-sobre.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 80vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  z-index: 123;
+  margin-bottom: -15rem;
+}
+
+
+.interno3 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  z-index: 123;
+}
+
+
+.box3 {
+  width: 100%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+
+.box3 h2 {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 600;
+}
+
+
+
+.box3 button {
+  width: 100%;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  font-size: 18px;
+  font-weight: 500;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  padding: 0.5rem 0rem 0.5rem 1rem;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.box3 span {
+  width: 100%;
+  background-color: #2e9845;
+  padding: 0.5rem 1rem;
+  margin-left: 0.5rem;
+}
+
+.box3 button img {
+  width: 100%;
+  max-width: 1rem;
+}
+
+
+@media only screen and (min-width: 216px) and (max-width: 926px) {
+  .background {
+    height: 100%;
+  }
+
+  .background2 {
+    padding-top: 37rem;
+    max-height: 50rem;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .interno {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 30rem;
+    padding-bottom: 1rem;
+  }
+
+  .interno2 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 35rem;
+    text-align: center;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+  }
+
+ .box {
+  max-width: 25rem;
+ }
+
+ .box h3 {
+  font-size: 48;
+ }
+
+ .valores {
+  margin: 0.5rem;
+}
+
+}

@@ -1,0 +1,140 @@
+.backgroundimg {
+  background-image: url(/static/images/banner-obras.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #ffffff;
+  height: 60vh;
+}
+
+.backgroundimg span {
+  font-size: 14px;
+}
+
+.background {
+  background-color: #ffffff;
+  width: 100%;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1e1e1e;
+  flex-direction: column;
+}
+
+.interno {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 80rem;
+}
+
+.box {
+  width: 100%;
+  max-width: 35rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.box h3 {
+  font-family: Montserrat;
+  font-size: 54px;
+  color: #2e9845;
+}
+
+.box p {
+  font-family: Montserrat;
+  font-size: 16px;
+  color: #464646;
+}
+
+.box ul {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 3rem;
+}
+
+.box li {
+  width: 100%;
+  max-width: 4rem;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.servicoimg {
+  width: 100%;
+}
+
+.interno2 {
+  width: 100%;
+  max-width: 80rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.interno2 img {
+  margin-top: 1.5rem;
+  width: 100%;
+  max-width: 5rem;
+}
+
+.projetos {
+  width: 100%;
+  max-width: 25rem;
+  margin-top: 2rem;
+}
+
+.servicos {
+  width: 100%;
+  max-width: 8rem;
+  margin-top: 2rem;
+}
+
+@media only screen and (min-width: 216px) and (max-width: 926px) {
+  .background {
+    height: 100%;
+  }
+
+  .background2 {
+    padding-top: 37rem;
+    max-height: 50rem;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .interno {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 30rem;
+    padding-bottom: 0rem;
+    margin-top: 0rem !important;
+  }
+
+  .interno2 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 35rem;
+    text-align: center;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+  }
+
+  .box {
+    max-width: 25rem;
+  }
+}

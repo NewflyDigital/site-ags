@@ -1,0 +1,14 @@
+.background {
+    width: 100%;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+}
+
+.mapa {
+    height: 100%;
+    position: absolute;
+    border: 0px;
+}

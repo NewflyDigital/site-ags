@@ -1,0 +1,203 @@
+ .background3 {
+   background-image: url(/static/images/banner-contato.png);
+   background-position: center;
+   background-size: cover;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: #ffffff;
+   height: 60vh;
+   background-color: #2e9845;
+ }
+
+ .background {
+   background-color: #ffffff;
+   width: 100%;
+   padding-top: 2.5rem;
+   padding-bottom: 2.5rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: #1E1E1E;
+   flex-direction: column;
+ }
+
+
+ .background2 {
+   background-color: #2e9845;
+   width: 100%;
+   padding-top: 1rem;
+   padding-bottom: 1rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: #ffffff;
+   flex-direction: column;
+ }
+
+ .interno2 {
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+   margin-top: 1rem;
+ }
+
+ .interno {
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+   max-width: 80rem;
+ }
+
+ .icone {
+   width: 100%;
+   max-width: 8rem;
+   margin-bottom: 1rem;
+ }
+
+ .caixa {
+   z-index: 999;
+   width: 100%;
+   max-width: 85rem;
+   display: flex;
+   flex-direction: row;
+   background-color: #ffffff;
+   color: #1E1E1E;
+   padding: 8rem 4rem;
+   align-items: center;
+   justify-content: space-between;
+   margin-bottom: -5rem;
+   margin-top: 1.5rem;
+   border-radius: 20rem 0rem 0rem 0rem;
+ }
+
+ .box {
+   width: 100%;
+   max-width: 40rem;
+   display: flex;
+   flex-direction: column;
+ }
+
+ .box h3 {
+   font-family: Montserrat;
+   font-size: 48px;
+   line-height: 44px;
+ }
+
+ .box p {
+   font-family: Montserrat;
+   font-size: 18px;
+   margin-top: 1rem;
+ }
+
+ .box_row {
+   font-size: 14px;
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 5px;
+   color: #1B1B1B;
+ }
+
+ .box_row p {
+   font-size: 18px;
+   margin-left: 0.6rem;
+   color: #1B1B1B;
+   max-width: 25rem;
+   line-height: 30px;
+   margin-bottom: 5px;
+ }
+
+ .box {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+ }
+
+
+ .box h4 {
+   font-family: Montserrat;
+   font-size: 18px;
+ }
+
+ .box2 {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+   text-align: center;
+ }
+
+ .mobile {
+   width: 100%;
+   display: flex;
+ }
+
+ .p {
+   color: #1B1B1B;
+   line-height: 30px;
+   margin-top: 2rem;
+ }
+
+ .titulo {
+   font-family: Montserrat;
+   letter-spacing: 2.5rem;
+   font-size: 32px;
+   text-align: center;
+ }
+
+ @media only screen and (min-width: 216px) and (max-width: 926px) {
+   .interno {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     width: 100%;
+     max-width: 40rem;
+   }
+
+   .caixa {
+     z-index: 999;
+     max-width: 35rem;
+     flex-direction: column;
+     background-color: #ffffff;
+     color: #1E1E1E;
+     padding: 6rem 3rem 2rem 3rem;
+     margin-bottom: 0rem;
+     margin-top: 2rem;
+     border-radius: 20rem 0rem 0rem 0rem;
+   }
+
+   .box {
+     align-items: center;
+   }
+
+   .box h4 {
+     margin-top: 2rem;
+   }
+
+   .box_row {
+     margin-top: -0.5rem;
+     margin-bottom: 1rem;
+     text-align: center;
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+   }
+
+   .titulo {
+     letter-spacing: 1rem;
+     font-size: 32px;
+     text-align: center;
+   }
+
+ }
