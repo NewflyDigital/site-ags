@@ -179,7 +179,7 @@ const Admin = ({ children = [], showLoader = false }) => {
             >
               <CachedImage
                 src="/static/images/logo.png"
-                alt="Logo SV Engenharia"
+                alt="Logo AGS Engenharia"
                 style={{
                   padding: "10px",
                   maxWidth: "100%",

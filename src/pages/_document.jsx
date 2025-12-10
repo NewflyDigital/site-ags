@@ -12,11 +12,11 @@ class DocumentosSite extends Document {
       <Html>
         <Head>
           <link rel="icon" href="/favicon.png" />
-          <title>SV Engenharia</title>
-          <meta name="description" content="SV Engenharia" />
+          <title>AGS Engenharia</title>
+          <meta name="description" content="AGS Engenharia" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
 
-          <meta name="author" content="SV Engenharia" />
+          <meta name="author" content="AGS Engenharia" />
           <link
             href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
             rel="stylesheet"
