@@ -1,86 +1,73 @@
 import * as React from "react";
 import styles from "../styles/Rodape.module.css";
-import { ThemeProvider, createTheme } from "@mui/material/styles";
-import MuiAlert from "@mui/material/Alert";
 import Link from "next/link";
 
-const Alert = React.forwardRef(function Alert(props, ref) {
-  return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
-});
-
-const themeOptions = {
-  palette: {
-    type: "light",
-    primary: {
-      main: "#c4c4c4",
-    },
-    secondary: {
-      main: "#c4c4c4",
-    },
-  },
-};
-
-const theme = createTheme(themeOptions);
-
-function Rodape() {
+export default function Rodape() {
   return (
     <footer className={styles.rodape}>
       <div className={styles.container}>
+        
+        {/* COLUNA 1 */}
         <div className={styles.coluna}>
-          <img
-            src="/static/images/logo-branco.png"
-            alt="Logo AGS"
-            className={styles.logo}
-          />
+          <Link href="/">
+            <img
+              src="/static/images/logo.png"
+              alt="Logo"
+              className={styles.logoAGS}
+            />
+          </Link>
           <p>
-            Soluções completas em ar condicionado para sua residência ou
-            empresa.
+            Soluções completas em ar condicionado para sua residência ou empresa.
           </p>
         </div>
 
+        {/* COLUNA 2 */}
         <div className={styles.coluna}>
           <h4>Serviços</h4>
           <ul>
-            <li>Instalação</li>
-            <li>Manutenção</li>
-            <li>Limpeza</li>
-            <li>Contratos</li>
+            <li><Link href="/instalacao">Instalação</Link></li>
+            <li><Link href="/manutencao">Manutenção</Link></li>
+            <li><Link href="/limpeza">Limpeza</Link></li>
+            <li><Link href="/contratos">Contratos</Link></li>
           </ul>
         </div>
 
+        {/* COLUNA 3 */}
         <div className={styles.coluna}>
           <h4>Empresa</h4>
           <ul>
-            <li>Sobre Nós</li>
-            <li>Serviços</li>
-            <li>Contato</li>
+            <li><Link href="/sobre">Sobre Nós</Link></li>
+            <li><Link href="/servicos">Serviços</Link></li>
+            <li><Link href="/contato">Contato</Link></li>
           </ul>
         </div>
 
+        {/* COLUNA 4 */}
         <div className={styles.coluna}>
           <h4>Contato</h4>
-          <p>(11) 99999-9999</p>
-          <p>contato@ags.com.br</p>
+
+          <p className={styles.contatoItem}>
+            <img src="/static/images/phone-white.png" alt="telefone" />
+            (11) 99999-9999
+          </p>
+
+          <p className={styles.contatoItem}>
+            <img src="/static/images/email-white.png" alt="email" />
+            contato@ags.com.br
+          </p>
+
           <div className={styles.redes}>
-            <a
-              href="https://www.facebook.com/"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
               <img src="/facebook-branco.png" alt="Facebook" />
             </a>
-            <a
-              href="https://www.instagram.com/"
-              target="_blank"
-              rel="noreferrer"
-            >
+
+            <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
               <img src="/Instagram-branco.png" alt="Instagram" />
             </a>
           </div>
         </div>
+
       </div>
     </footer>
   );
 }
-
-export default Rodape;

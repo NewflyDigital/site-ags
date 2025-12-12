@@ -3,6 +3,7 @@ import Banner from "../components/banner";
 import Menu from "../components/menu";
 import styles from "../styles/Index.module.css";
 import Rodape from "../components/rodape";
+import ContatoSection from "../components/contactSection";
 import Whats from "../components/whats";
 import { ReadAll as ReadArtigos } from "../services/blog";
 import { useQuery } from "@tanstack/react-query";
@@ -28,6 +29,50 @@ export default function Home() {
   }, []);
 
   const { openVideo, videoUrl } = state;
+
+  const dados = [
+    {
+      nome: "João Pereira",
+      texto:
+        "A AGS Engenharia executou meu projeto com excelência, rapidez e profissionalismo. Recomendo!",
+    },
+    {
+      nome: "Mariana Duarte",
+      texto:
+        "Equipe extremamente competente! Atendimento impecável e resultado melhor do que o esperado.",
+    },
+    {
+      nome: "Carlos Henrique",
+      texto:
+        "Ótima empresa! Cumpriram prazos e mantiveram tudo organizado durante a obra.",
+    },
+  ];
+
+  const posts = [
+    {
+      id: 1,
+      titulo: "5 Dicas de Segurança em Obras Residenciais",
+      resumo:
+        "Veja como garantir uma obra mais segura e organizada para você e sua equipe.",
+      categoria: "Construção",
+      data: "12 Dez 2024",
+    },
+    {
+      id: 2,
+      titulo: "Como Reduzir Custos em Reformas",
+      resumo:
+        "Conheça estratégias simples para economizar sem comprometer a qualidade.",
+      categoria: "Reformas",
+      data: "20 Nov 2024",
+    },
+    {
+      id: 3,
+      titulo: "Tendências de Arquitetura Moderna",
+      resumo: "Minimalismo, integração e tecnologia — veja o que está em alta.",
+      categoria: "Arquitetura",
+      data: "03 Out 2024",
+    },
+  ];
 
   return (
     <>
@@ -244,7 +289,7 @@ export default function Home() {
             <h4>Empresas</h4>
             <p>Escritórios e corporações</p>
           </div>
-           <div className={styles.segmentoItem}>
+          <div className={styles.segmentoItem}>
             <div className={styles.cardIcon2}>
               <img
                 src="/static/images/wrench.png"
@@ -254,7 +299,7 @@ export default function Home() {
             <h4>Comércio</h4>
             <p>Lojas e estabelecimentos</p>
           </div>
-           <div className={styles.segmentoItem}>
+          <div className={styles.segmentoItem}>
             <div className={styles.cardIcon2}>
               <img
                 src="/static/images/wrench.png"
@@ -264,7 +309,7 @@ export default function Home() {
             <h4>Residências</h4>
             <p>Casas e apartamentos</p>
           </div>
-           <div className={styles.segmentoItem}>
+          <div className={styles.segmentoItem}>
             <div className={styles.cardIcon2}>
               <img
                 src="/static/images/wrench.png"
@@ -274,7 +319,7 @@ export default function Home() {
             <h4>Indústrias</h4>
             <p>Plantas industriais</p>
           </div>
-           <div className={styles.segmentoItem}>
+          <div className={styles.segmentoItem}>
             <div className={styles.cardIcon2}>
               <img
                 src="/static/images/wrench.png"
@@ -284,7 +329,7 @@ export default function Home() {
             <h4>Saúde</h4>
             <p>Clínicas e hospitais</p>
           </div>
-           <div className={styles.segmentoItem}>
+          <div className={styles.segmentoItem}>
             <div className={styles.cardIcon2}>
               <img
                 src="/static/images/wrench.png"
@@ -294,7 +339,6 @@ export default function Home() {
             <h4>Educação</h4>
             <p>Escolas e univercidades</p>
           </div>
-         
         </div>
 
         <div className={styles.segmentosBox}>
@@ -308,6 +352,7 @@ export default function Home() {
 =========================================== */}
       <section className={styles.depoimentosSection}>
         <h4 className={styles.depoimentosMiniTitulo}>DEPOIMENTOS</h4>
+
         <h2 className={styles.depoimentosTitulo}>
           O Que Nossos Clientes Dizem
           <br />
@@ -322,6 +367,7 @@ export default function Home() {
               com rapidez e eficiência.&quot;
             </p>
           </div>
+
           <div className={styles.depoimentoCard}>
             <h3>Maria Santos</h3>
             <p>
@@ -329,6 +375,7 @@ export default function Home() {
               competentes.&quot;
             </p>
           </div>
+
           <div className={styles.depoimentoCard}>
             <h3>Pedro Oliveira</h3>
             <p>
@@ -336,6 +383,7 @@ export default function Home() {
               minha empresa com perfeição.&quot;
             </p>
           </div>
+
           <div className={styles.depoimentoCard}>
             <h3>Ana Costa</h3>
             <p>
@@ -346,38 +394,44 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ==========================================
-    SESSÃO — BLOG
-=========================================== */}
+      {/* ============================ */}
+      {/*            BLOG              */}
+      {/* ============================ */}
       <section className={styles.blogSection}>
-        <h4 className={styles.blogMiniTitulo}>BLOG</h4>
+        <p className={styles.blogMiniTitulo}>BLOG</p>
+
         <h2 className={styles.blogTitulo}>
-          Dicas e Novidades
-          <br />
-          <span>
-            Fique por dentro das melhores práticas e novidades do setor
-          </span>
+          Dicas e <span>Novidades</span>
         </h2>
 
+        <p className={styles.blogSub}>
+          Fique por dentro das melhores práticas e novidades do setor
+        </p>
+
         <div className={styles.blogCards}>
-          <div className={styles.blogCard}>
-            <h3>Como Escolher o Ar Condicionado Ideal para Sua Casa</h3>
-            <p>17 Nov 2021</p>
-            <a href="#">Leia mais</a>
-          </div>
-          <div className={styles.blogCard}>
-            <h3>Manutenção Preventiva: Por Que é Essencial?</h3>
-            <p>17 Nov 2021</p>
-            <a href="#">Leia mais</a>
-          </div>
-          <div className={styles.blogCard}>
-            <h3>Eficiência Energética em Sistemas de Climatização</h3>
-            <p>17 Nov 2021</p>
-            <a href="#">Leia mais</a>
-          </div>
+          {posts.map((post) => (
+            <div key={post.id} className={styles.blogCard}>
+              <span className={styles.blogTag}>{post.categoria}</span>
+
+              <h3>{post.titulo}</h3>
+
+              <p>{post.resumo}</p>
+
+              <div className={styles.blogDivider}></div>
+
+              <div className={styles.blogFooter}>
+                <div className={styles.blogData}>
+                  <img src="/icons/calendar.png" alt="" />
+                  {post.data}
+                </div>
+
+                <div className={styles.blogMais}>Ler mais →</div>
+              </div>
+            </div>
+          ))}
         </div>
 
-        <button className={styles.blogBotao}>Ver Todas as Dicas</button>
+        <button className={styles.blogBotao}>Ver Todos os Artigos</button>
       </section>
 
       {/* BLOG
@@ -446,6 +500,7 @@ export default function Home() {
       </section>
 
       */}
+      <ContatoSection />
       <Rodape />
       <Whats />
       <Dialog
