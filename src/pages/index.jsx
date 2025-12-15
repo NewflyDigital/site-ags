@@ -158,7 +158,7 @@ export default function Home() {
           {/* CARD 1 */}
           <div className={styles.cardServico}>
             <div className={styles.cardImg}>
-              <img src="/static/images/banner.png" alt="Serviço 1" />
+              <img src="/static/images/servicos-Instalacao.jpg" alt="Serviço 1" />
               <div className={styles.cardIcon}>
                 <img src="/static/images/wrench-branco.png" alt="Instalação " />
               </div>
@@ -174,7 +174,7 @@ export default function Home() {
           {/* CARD 2 */}
           <div className={styles.cardServico}>
             <div className={styles.cardImg}>
-              <img src="/static/images/banner.png" alt="Serviço 2" />
+              <img src="/static/images/servicos-Manutencao-Preventiva.jpg" alt="Serviço 2" />
               <div className={styles.cardIcon}>
                 <img
                   src="/static/images/setting.png"
@@ -193,7 +193,7 @@ export default function Home() {
           {/* CARD 3 */}
           <div className={styles.cardServico}>
             <div className={styles.cardImg}>
-              <img src="/static/images/banner.png" alt="Serviço 3" />
+              <img src="/static/images/servicos-Manutencao-Corretiva.jpg" alt="Serviço 3" />
               <div className={styles.cardIcon}>
                 <img
                   src="/static/images/thermometer.png"
@@ -218,7 +218,7 @@ export default function Home() {
         <div className={styles.empresasContainer}>
           {/* IMAGEM ESQUERDA */}
           <div className={styles.empresasImg}>
-            <img src="/static/images/banner.png" alt="Grandes empresas" />
+            <img src="/static/images/Projetos-especiais.png" alt="Grandes empresas" />
           </div>
 
           {/* TEXTO DIREITO */}
@@ -282,7 +282,7 @@ export default function Home() {
           <div className={styles.segmentoItem}>
             <div className={styles.cardIcon2}>
               <img
-                src="/static/images/wrench.png"
+                src="/static/images/empresa.png"
                 alt="Manutenção Preventiva"
               />
             </div>
@@ -292,7 +292,7 @@ export default function Home() {
           <div className={styles.segmentoItem}>
             <div className={styles.cardIcon2}>
               <img
-                src="/static/images/wrench.png"
+                src="/static/images/comercio.png"
                 alt="Manutenção Preventiva"
               />
             </div>
@@ -302,7 +302,7 @@ export default function Home() {
           <div className={styles.segmentoItem}>
             <div className={styles.cardIcon2}>
               <img
-                src="/static/images/wrench.png"
+                src="/static/images/residencias.png"
                 alt="Manutenção Preventiva"
               />
             </div>
@@ -312,7 +312,7 @@ export default function Home() {
           <div className={styles.segmentoItem}>
             <div className={styles.cardIcon2}>
               <img
-                src="/static/images/wrench.png"
+                src="/static/images/industrias.png"
                 alt="Manutenção Preventiva"
               />
             </div>
@@ -322,7 +322,7 @@ export default function Home() {
           <div className={styles.segmentoItem}>
             <div className={styles.cardIcon2}>
               <img
-                src="/static/images/wrench.png"
+                src="/static/images/saude.png"
                 alt="Manutenção Preventiva"
               />
             </div>
@@ -332,7 +332,7 @@ export default function Home() {
           <div className={styles.segmentoItem}>
             <div className={styles.cardIcon2}>
               <img
-                src="/static/images/wrench.png"
+                src="/static/images/educacao.png"
                 alt="Manutenção Preventiva"
               />
             </div>
@@ -421,7 +421,7 @@ export default function Home() {
 
               <div className={styles.blogFooter}>
                 <div className={styles.blogData}>
-                  <img src="/icons/calendar.png" alt="" />
+                  <img src="/static/images/calendario.png" alt="" />
                   {post.data}
                 </div>
 
@@ -500,6 +500,7 @@ export default function Home() {
       </section>
 
       */}
+      <a id="contato">&nbsp;</a>
       <ContatoSection />
       <Rodape />
       <Whats />

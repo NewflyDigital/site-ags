@@ -60,7 +60,7 @@
 .icone {
   width: 40px;
   height: 40px;
-  background: #e84800;
+  background: linear-gradient(90deg, #e84800, #ff7800);
   border-radius: 50%;
   display: flex;
   justify-content: center;

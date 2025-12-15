@@ -38,7 +38,7 @@ export default function ContactSection() {
           {/* TELEFONE */}
           <div className={styles.infoBloco}>
             <div className={styles.icone}>
-              <img src="/static/images/icons/phone-white.png" alt="" />
+              <img src="/phone-branco.png" alt="" />
             </div>
             <div>
               <h5>Telefone</h5>
@@ -50,7 +50,7 @@ export default function ContactSection() {
           {/* EMAIL */}
           <div className={styles.infoBloco}>
             <div className={styles.icone}>
-              <img src="/static/images/icons/email-white.png" alt="" />
+              <img src="/static/images/icons/email.png" alt="" />
             </div>
             <div>
               <h5>E-mail</h5>
@@ -62,7 +62,7 @@ export default function ContactSection() {
           {/* HORÁRIO */}
           <div className={styles.infoBloco}>
             <div className={styles.icone}>
-              <img src="/static/images/icons/clock-white.png" alt="" />
+              <img src="/static/images/icons/horario.png" alt="" />
             </div>
             <div>
               <h5>Horário de Atendimento</h5>
@@ -75,7 +75,7 @@ export default function ContactSection() {
           {/* LOCALIZAÇÃO */}
           <div className={styles.infoBloco}>
             <div className={styles.icone}>
-              <img src="/static/images/icons/location-white.png" alt="" />
+              <img src="/endereco.png" alt="" />
             </div>
             <div>
               <h5>Localização</h5>
