@@ -1,140 +1,181 @@
+/* ============================
+   BANNER TOPO
+============================ */
 .backgroundimg {
-  background-image: url(/static/images/banner-obras.png);
+  background-image: url(/static/images/banner-interno.jpg);
   background-position: center;
   background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  color: #ffffff;
   height: 60vh;
-}
 
-.backgroundimg span {
-  font-size: 14px;
-}
-
-.background {
-  background-color: #ffffff;
-  width: 100%;
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #1e1e1e;
-  flex-direction: column;
-}
-
-.interno {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  max-width: 80rem;
-}
-
-.box {
-  width: 100%;
-  max-width: 35rem;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-
-.box h3 {
-  font-family: Montserrat;
-  font-size: 54px;
-  color: #2e9845;
-}
-
-.box p {
-  font-family: Montserrat;
-  font-size: 16px;
-  color: #464646;
-}
-
-.box ul {
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 3rem;
-}
-
-.box li {
-  width: 100%;
-  max-width: 4rem;
-  margin-right: 1rem;
-  cursor: pointer;
-}
-
-.servicoimg {
-  width: 100%;
+  color: #ffffff;
 }
 
 .interno2 {
   width: 100%;
   max-width: 80rem;
+  padding: 0 1.5rem;
+
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: flex-end;
+}
+
+.backgroundimg span {
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.backgroundimg h2 {
+  font-size: 48px;
+  font-weight: 700;
 }
 
 .interno2 img {
   margin-top: 1.5rem;
+  width: 5rem;
+}
+
+
+/* ============================
+   SEÇÃO BASE
+============================ */
+.background {
   width: 100%;
-  max-width: 5rem;
+  padding: 4rem 1.5rem;
+  background-color: #ffffff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.interno {
+  width: 100%;
+  max-width: 80rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+
+
+/* ============================
+   BLOCOS
+============================ */
+.box {
+  width: 100%;
+  max-width: 35rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.box h3 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 3.2rem;
+
+  background: linear-gradient(90deg, #e84800, #ff7800);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.box p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #464646;
+}
+
+
+/* ============================
+   ÍCONES TOPO SERVIÇOS
+============================ */
+.box ul {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.box ul li {
+  width: 4rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.box ul li:hover {
+  transform: translateY(-4px);
+}
+
+
+/* ============================
+   IMAGENS
+============================ */
+.servicoimg {
+  width: 100%;
+  border-radius: 0.5rem;
 }
 
 .projetos {
   width: 100%;
-  max-width: 25rem;
+  max-width: 24rem;
   margin-top: 2rem;
 }
 
 .servicos {
   width: 100%;
-  max-width: 8rem;
-  margin-top: 2rem;
+  max-width: 7rem;
+  margin-bottom: 1rem;
 }
 
-@media only screen and (min-width: 216px) and (max-width: 926px) {
-  .background {
-    height: 100%;
-  }
 
-  .background2 {
-    padding-top: 37rem;
-    max-height: 50rem;
-    align-items: center;
-    justify-content: center;
-    align-items: center;
-  }
+/* ============================
+   RESPONSIVO
+============================ */
+@media (max-width: 960px) {
 
-  .interno {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    max-width: 30rem;
-    padding-bottom: 0rem;
-    margin-top: 0rem !important;
+  .backgroundimg {
+    height: 50vh;
+    text-align: center;
   }
 
   .interno2 {
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    width: 100%;
-    max-width: 35rem;
+  }
+
+  .background {
+    padding: 3rem 1.5rem;
+  }
+
+  .interno {
+    flex-direction: column;
     text-align: center;
-    margin-top: 0rem;
-    margin-bottom: 0rem;
   }
 
   .box {
-    max-width: 25rem;
+    max-width: 100%;
+    align-items: center;
+  }
+
+  .box h3 {
+    font-size: 36px;
+    line-height: 2.8rem;
+  }
+
+  .box p {
+    font-size: 15px;
+  }
+
+  .box ul {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .servicos {
+    max-width: 6rem;
   }
 }

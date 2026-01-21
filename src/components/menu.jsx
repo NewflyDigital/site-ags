@@ -64,11 +64,11 @@ function Menu() {
           </li>
 
           <li className={styles.li}>
-            <Link href="#sobre" passHref>Sobre</Link>
+            <Link href="/sobre" passHref>Sobre</Link>
           </li>
 
           <li className={styles.li}>
-            <Link href="#servicos" passHref>Serviços</Link>
+            <Link href="/servicos" passHref>Serviços</Link>
           </li>
 
       {/*SubMenu Modelo
@@ -95,7 +95,7 @@ function Menu() {
           */}
 
           <li className={styles.li}>
-            <Link href="#contato" passHref>Contato</Link>
+            <Link href="/#contato" passHref>Contato</Link>
           </li>
         </ul>
 

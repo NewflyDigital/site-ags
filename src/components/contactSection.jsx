@@ -50,7 +50,7 @@ export default function ContactSection() {
           {/* EMAIL */}
           <div className={styles.infoBloco}>
             <div className={styles.icone}>
-              <img src="/static/images/icons/email.png" alt="" />
+              <img src="/email-branco.png" alt="" />
             </div>
             <div>
               <h5>E-mail</h5>
@@ -62,7 +62,7 @@ export default function ContactSection() {
           {/* HORÁRIO */}
           <div className={styles.infoBloco}>
             <div className={styles.icone}>
-              <img src="/static/images/icons/horario.png" alt="" />
+              <img src="/horario.png" alt="" />
             </div>
             <div>
               <h5>Horário de Atendimento</h5>

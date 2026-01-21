@@ -143,6 +143,7 @@
   font-weight: 700;
   font-size: .95rem;
   transition: .2s;
+  font-family: Montserrat;
 }
 
 .btn_orcamento:hover {

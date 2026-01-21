@@ -25,10 +25,10 @@ export default function Rodape() {
         <div className={styles.coluna}>
           <h4>Serviços</h4>
           <ul>
-            <li><Link href="/instalacao">Instalação</Link></li>
-            <li><Link href="/manutencao">Manutenção</Link></li>
-            <li><Link href="/limpeza">Limpeza</Link></li>
-            <li><Link href="/contratos">Contratos</Link></li>
+            <li><Link href="/servicos#instalacao">Instalação</Link></li>
+            <li><Link href="/servicos#manutencao">Manutenção</Link></li>
+            <li><Link href="/servicos#limpeza">Limpeza</Link></li>
+            <li><Link href="/servicos#contratos">Contratos</Link></li>
           </ul>
         </div>
 
@@ -47,22 +47,22 @@ export default function Rodape() {
           <h4>Contato</h4>
 
           <p className={styles.contatoItem}>
-            <img src="/static/images/phone-white.png" alt="telefone" />
+            <img src="/phone.png" alt="telefone" />
             (11) 99999-9999
           </p>
 
           <p className={styles.contatoItem}>
-            <img src="/static/images/email-white.png" alt="email" />
+            <img src="/email.png" alt="email" />
             contato@ags.com.br
           </p>
 
           <div className={styles.redes}>
             <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
-              <img src="/facebook-branco.png" alt="Facebook" />
+              <img src="/facebook.png" alt="Facebook" />
             </a>
 
             <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
-              <img src="/Instagram-branco.png" alt="Instagram" />
+              <img src="/Instagram.png" alt="Instagram" />
             </a>
           </div>
         </div>
