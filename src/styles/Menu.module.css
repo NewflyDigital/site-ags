@@ -307,6 +307,10 @@ a:hover+#submenu,
     overflow-y: hidden;
   }
 
+  .phone {
+    display: none;
+}
+
   #nav.active {
     height: calc(100vh - 65px);
     visibility: visible;
@@ -324,6 +328,7 @@ a:hover+#submenu,
     display: flex;
     padding: 0.5rem 1rem;
     cursor: pointer;
+    border: none;
   }
 
   #hamburguer {

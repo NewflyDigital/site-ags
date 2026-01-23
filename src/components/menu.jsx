@@ -39,7 +39,6 @@ function Menu() {
   return (
     <div id={styles.menuheader} className={styles.header}>
       <div className={styles.interno}>
-        
         {/* LOGO */}
         <Link href="/" passHref>
           <img
@@ -49,29 +48,30 @@ function Menu() {
           />
         </Link>
 
-        {/* BOTÃO MOBILE */}
-        <button id={`${styles.btn_mobile}`}>
-          <span id={`${styles.hamburguer}`}></span>
-        </button>
-
         {/* MENU PRINCIPAL */}
         <ul
           id={`${styles.nav}`}
           className={`${styles.menu} ${styles.navbar} ${styles.a2}`}
         >
           <li className={styles.li}>
-            <Link href="/" passHref>Início</Link>
+            <Link href="/" passHref>
+              Início
+            </Link>
           </li>
 
           <li className={styles.li}>
-            <Link href="/sobre" passHref>Sobre</Link>
+            <Link href="/sobre" passHref>
+              Sobre
+            </Link>
           </li>
 
           <li className={styles.li}>
-            <Link href="/servicos" passHref>Serviços</Link>
+            <Link href="/servicos" passHref>
+              Serviços
+            </Link>
           </li>
 
-      {/*SubMenu Modelo
+          {/*SubMenu Modelo
       
           <li
             className={styles.li}
@@ -95,28 +95,33 @@ function Menu() {
           */}
 
           <li className={styles.li}>
-            <Link href="/produtos" passHref>Produtos</Link>
+            <Link href="/produtos" passHref>
+              Produtos
+            </Link>
           </li>
           <li className={styles.li}>
-            <Link href="/#contato" passHref>Contato</Link>
+            <Link href="/#contato" passHref>
+              Contato
+            </Link>
           </li>
         </ul>
 
         {/* LADO DIREITO (TELEFONE + BOTÃO) */}
         <div className={styles.right}>
-          
           <div className={styles.phone}>
             <img src="/phone.png" alt="Telefone" />
             <span>(11) 99999-9999</span>
           </div>
 
           <Link href="/" passHref>
-            <button className={styles.btn_orcamento}>
-              Orçamento Grátis
-            </button>
+            <button className={styles.btn_orcamento}>Orçamento Grátis</button>
           </Link>
 
-{/*
+          {/* BOTÃO MOBILE */}
+          <button id={`${styles.btn_mobile}`}>
+            <span id={`${styles.hamburguer}`}></span>
+          </button>
+          {/*
         <ul className={styles.social_media}>
             <li>
               <Link
@@ -139,7 +144,6 @@ function Menu() {
             </li>
           </ul>
 */}
-
         </div>
       </div>
     </div>

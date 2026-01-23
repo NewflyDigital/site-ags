@@ -816,6 +816,8 @@
 
   .empresasContainer {
     grid-template-columns: 1fr;
+  width: 100%;
+  max-width: 25rem;
   }
 
   .empresasImg {

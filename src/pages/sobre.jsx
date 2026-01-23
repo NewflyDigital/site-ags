@@ -21,7 +21,7 @@ export default function QuemSomos() {
 
       {/* TEXTO PRINCIPAL */}
       <section className={styles.background}>
-        <div className="w-full max-w-[80rem] grid grid-cols-2 justify-center">
+        <div className="w-full max-w-[80rem] grid grid-cols-1 sm:grid-cols-2 justify-center">
           <div className={`${styles.box} !justify-center !items-center`}>
             <h3 className="leading-[3.5rem]">
               Conforto, eficiência e confiança em cada projeto
@@ -33,9 +33,10 @@ export default function QuemSomos() {
               A AGS Engenharia é especializada em soluções completas de
               climatização para residências, empresas e indústrias. Atuamos com
               foco em qualidade, eficiência energética e segurança, oferecendo
-              serviços de instalação, manutenção e projetos personalizados de
-              ar condicionado.
-              <br /><br />
+              serviços de instalação, manutenção e projetos personalizados de ar
+              condicionado.
+              <br />
+              <br />
               Com uma equipe técnica qualificada e constante atualização
               tecnológica, entregamos conforto térmico, economia e desempenho,
               sempre respeitando normas técnicas e as necessidades específicas
@@ -54,26 +55,24 @@ export default function QuemSomos() {
           <div className={`!h-[17rem] ${styles.valores}`}>
             <h3>Missão</h3>
             <p>
-              Oferecer soluções em climatização com qualidade,
-              segurança e eficiência, garantindo conforto
-              e satisfação aos nossos clientes.
+              Oferecer soluções em climatização com qualidade, segurança e
+              eficiência, garantindo conforto e satisfação aos nossos clientes.
             </p>
           </div>
 
           <div className={`!h-[17rem] ${styles.valores}`}>
             <h3>Visão</h3>
             <p>
-              Ser referência regional em engenharia de
-              climatização, reconhecida pela excelência
-              técnica e atendimento.
+              Ser referência regional em engenharia de climatização, reconhecida
+              pela excelência técnica e atendimento.
             </p>
           </div>
 
           <div className={`!h-[17rem] ${styles.valores}`}>
             <h3>Valores</h3>
             <p>
-              Comprometimento, ética, inovação,
-              responsabilidade e respeito ao cliente.
+              Comprometimento, ética, inovação, responsabilidade e respeito ao
+              cliente.
             </p>
           </div>
         </div>
@@ -84,8 +83,7 @@ export default function QuemSomos() {
         <div className={styles.interno3}>
           <div className={styles.box3}>
             <h2>
-              Climatização inteligente começa com
-              quem entende do assunto.
+              Climatização inteligente começa com quem entende do assunto.
             </h2>
             <Link href="/servicos">
               <button>
@@ -95,8 +93,6 @@ export default function QuemSomos() {
                 </span>
               </button>
             </Link>
-
-            
           </div>
         </div>
       </section>

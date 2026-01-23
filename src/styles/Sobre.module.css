@@ -235,6 +235,7 @@
 
   .background {
     padding: 3rem 1.5rem;
+    flex-direction: column;
   }
 
   .interno {
