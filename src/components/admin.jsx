@@ -78,7 +78,7 @@ const Drawer = styled(MuiDrawer, {
 const mdTheme = createTheme({
   palette: {
     primary: {
-      main: "#2e9845",
+      main: "#e84800",
       contrastText: "#fff",
     },
     secondary: {
@@ -203,13 +203,13 @@ const Admin = ({ children = [], showLoader = false }) => {
                 />
               </ListItem>
             </Link>
-            <Link legacyBehavior href="/admin/blog" passHref>
+            <Link legacyBehavior href="/admin/produtos" passHref>
               <ListItem button>
                 <ListItemIcon>
                   <ArticleIcon />
                 </ListItemIcon>
                 <ListItemText
-                  primary="Blog"
+                  primary="Produtos"
                   sx={{ color: "rgba(0, 0, 0, 0.54)" }}
                 />
               </ListItem>

@@ -42,8 +42,8 @@ function Copyright(props) {
       {...props}
     >
       {"Copyright © "}
-      <Link legacyBehaviorcolor="inherit" href="https://svengenharia.srv.br/">
-        SV Engenharia
+      <Link legacyBehaviorcolor="inherit" href="https://agsengenharia.com.br/">
+        AGS Engenharia
       </Link>
       &nbsp;
       {new Date().getFullYear()}
@@ -55,7 +55,7 @@ function Copyright(props) {
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#2e9845",
+      main: "#e84800",
       contrastText: "#fff",
     },
     secondary: {
@@ -195,7 +195,7 @@ export default function SignInSide() {
           sm={4}
           md={7}
           sx={{
-            backgroundImage: "url(/static/images/banner-quemsomos.png)",
+            backgroundImage: "url(/static/images/servicos2-Instalacao.jpg)",
             backgroundRepeat: "no-repeat",
             backgroundColor: t =>
               t.palette.mode === "light"
@@ -279,7 +279,7 @@ export default function SignInSide() {
                 variant="contained"
                 sx={{ mt: 3, mb: 2 }}
                 style={{
-                  backgroundColor: "var(--color-primary)",
+                  backgroundColor: "#e84800",
                   padding: ".75rem",
                   fontWeight: "500",
                 }}

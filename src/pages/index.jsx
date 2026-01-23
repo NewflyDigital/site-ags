@@ -5,7 +5,7 @@ import styles from "../styles/Index.module.css";
 import Rodape from "../components/rodape";
 import ContatoSection from "../components/contactSection";
 import Whats from "../components/whats";
-import { ReadAll as ReadArtigos } from "../services/blog";
+import { ReadAll as ReadArtigos } from "../services/produtos";
 import { useQuery } from "@tanstack/react-query";
 import CachedImage from "../components/CachedImage";
 import Link from "next/link";
@@ -19,7 +19,7 @@ export default function Home() {
     videoUrl: "https://www.youtube.com/watch?v=kSNnxvEUVkY",
   });
   const { data, isLoading } = useQuery({
-    queryKey: ["blog"],
+    queryKey: ["produtos"],
     queryFn: ReadArtigos,
     staleTime: 1000 * 60 * 10,
   });
@@ -450,14 +450,6 @@ export default function Home() {
 
               artigos.map((artigo, index) => {
                 const imagemUrl = `https://firebasestorage.googleapis.com/v0/b/sv-engenharia.firebasestorage.app/o/images%2Fblog%2F${artigo.id}%2F${artigo.imagem}?alt=media`;
-
-                const dataPorExtenso = new Intl.DateTimeFormat("pt-Br", {
-                  weekday: "long",
-                  month: "long",
-                  day: "2-digit",
-                  year: "numeric",
-                  timeZone: "America/Sao_Paulo",
-                }).format(new Date(artigo.dataDoArtigo));
 
                 const resumo = artigo.texto
                   .replace(/<[^>]+>/g, "")

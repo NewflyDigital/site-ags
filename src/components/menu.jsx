@@ -95,6 +95,9 @@ function Menu() {
           */}
 
           <li className={styles.li}>
+            <Link href="/produtos" passHref>Produtos</Link>
+          </li>
+          <li className={styles.li}>
             <Link href="/#contato" passHref>Contato</Link>
           </li>
         </ul>

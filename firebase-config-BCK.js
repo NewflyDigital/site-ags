@@ -13,7 +13,6 @@ const firebaseConfig = {
   storageBucket: "ags-engenharia.firebasestorage.app",
   messagingSenderId: "493901760696",
   appId: "1:493901760696:web:7b9f2554fc45fef3da8c4d"
-
 };
 
 const app = initializeApp(firebaseConfig);
@@ -21,4 +20,3 @@ const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app);
 export const emailProvider = new EmailAuthProvider();
 export const storage = getStorage(app);
-export const auth = getAuth(app);
