@@ -110,10 +110,10 @@ function Menu() {
         <div className={styles.right}>
           <div className={styles.phone}>
             <img src="/phone.png" alt="Telefone" />
-            <span>(11) 99999-9999</span>
+            <span>(54) 9 8134-6814</span>
           </div>
 
-          <Link href="/" passHref>
+          <Link href="https://api.whatsapp.com/send?phone=5554981346814&text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es" passHref>
             <button className={styles.btn_orcamento}>Orçamento Grátis</button>
           </Link>
 

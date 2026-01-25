@@ -32,7 +32,7 @@ function Banner() {
           <div className={styles.card}>
             <img src="/static/images/email.png" alt="Ícone Email"/>
             <h3>Contatos</h3>
-            <p>(11) 99999-9999 <br /> contato@ags.com.br</p>
+            <p>(54) 9 8134-6814 <br /> (54) 9 9611-4226<br /> contato@agsengenhariars.com.br</p>
           </div>
 
           <div className={styles.card}>
