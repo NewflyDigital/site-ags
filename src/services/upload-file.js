@@ -127,7 +127,7 @@ function urltoFile(url, filename, mimeType) {
 
 export const GetImageUrl = async (path, filename) => {
   try {
-    const referencia = ref(storage, `/images/${path}/${filename}`);
+    const referencia = ref(storage, `/${path}/${filename}`);
 
     const retorno = await getDownloadURL(referencia);
 

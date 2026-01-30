@@ -75,37 +75,47 @@ const Content = () => {
   }, [editorState]);
 
   /* SAVE */
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setLoading(true);
+const handleSubmit = async (e) => {
+  e.preventDefault();
+  setLoading(true);
 
-    try {
-      const params = { nome, preco, descricao, imagem };
+  try {
+    let produtoId = id;
 
-      let produtoId = id;
+    // 1️⃣ Cria ou atualiza SEM imagem primeiro
+    const baseData = { nome, preco, descricao };
 
-      if (id && id !== "null") {
-        await Update(id, params);
-      } else {
-        produtoId = await Create(params);
-      }
-
-      if (imagemStream) {
-        await UploadImage({
-          file: imagemStream,
-          fileName: imagem,
-          path: `produtos/${produtoId}`,
-        });
-      }
-
-      Swal.fire("Sucesso", "Produto salvo com sucesso", "success");
-      router.push("/admin/produtos");
-    } catch (e) {
-      Swal.fire("Erro", e.message, "error");
-    } finally {
-      setLoading(false);
+    if (id && id !== "null") {
+      await Update(id, baseData);
+    } else {
+      produtoId = await Create(baseData);
     }
-  };
+
+    // 2️⃣ Se tiver imagem, faz upload e salva a URL
+   if (imagemStream) {
+  const upload = await UploadImage({
+    file: imagemStream,
+    fileName: imagem,
+    path: `produtos/${produtoId}`,
+  });
+
+  if (upload?.url) {
+    await Update(produtoId, {
+      imagem: upload.url, // 👈 URL COMPLETA
+    });
+  }
+}
+
+
+    Swal.fire("Sucesso", "Produto salvo com sucesso", "success");
+    router.push("/admin/produtos");
+  } catch (e) {
+    Swal.fire("Erro", e.message, "error");
+  } finally {
+    setLoading(false);
+  }
+};
+
 
   return (
     <Paper className="p-6">

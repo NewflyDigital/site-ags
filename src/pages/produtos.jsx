@@ -63,17 +63,17 @@ export default function Produtos() {
           )}
 
           {produtos?.map((produto) => {
-            const imagemUrl = produto.imagem
-              ? `https://firebasestorage.googleapis.com/v0/b/sv-engenharia.firebasestorage.app/o/produtos%2F${produto.id}%2F${produto.imagem}?alt=media`
-              : "/static/images/placeholder.png";
+            const imagemUrl = produto.imagem || "/static/images/placeholder.png";
 
             const descricaoLimpa = (produto.descricao || "")
               .replace(/<[^>]+>/g, "")
               .replace(/[\n\r]/g, "")
               .substring(0, 120);
-{/*
+            {
+              /*
   href={`/produtos/${produto.id}`}
-  */}
+  */
+            }
             return (
               <Link
                 key={produto.id}
