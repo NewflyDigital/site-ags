@@ -42,8 +42,8 @@ export default function ContactSection() {
             </div>
             <div>
               <h5>Telefone</h5>
-              <p>(11) 99999-9999</p>
-              <p>(11) 99999-9999</p>
+              <p>(54) 9 8134-6814 </p>
+              <p>(54) 9 9611-4226</p>
             </div>
           </div>
 
@@ -54,8 +54,7 @@ export default function ContactSection() {
             </div>
             <div>
               <h5>E-mail</h5>
-              <p>contato@ags.com.br</p>
-              <p>orcamento@ags.com.br</p>
+              <p>contato@agsengenhariars.com.br</p>
             </div>
           </div>
 
@@ -67,7 +66,7 @@ export default function ContactSection() {
             <div>
               <h5>Horário de Atendimento</h5>
               <p>Segunda - Sexta: 08h às 18h</p>
-              <p>Sábado: 08h às 14h</p>
+              <p>Sábado: Fechado</p>
               <p>Domingo: Fechado</p>
             </div>
           </div>

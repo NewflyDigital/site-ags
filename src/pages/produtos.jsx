@@ -15,6 +15,54 @@ export default function Produtos() {
     queryFn: ReadAll,
   });
 
+  const [categoriaAtiva, setCategoriaAtiva] = React.useState(null);
+  const [parceiroAtivo, setParceiroAtivo] = React.useState(null);
+
+  const categorias = [
+    {
+      id: "High Wall",
+      nome: "High Wall",
+      icon: "/static/images/wrench.png",
+    },
+    { id: "InverteR On-Off", nome: "Inverter On-Off", icon: "/static/images/wrench.png" },
+    { id: "Cassete", nome: "Cassete", icon: "/static/images/wrench.png" },
+    { id: "Piso Teto", nome: "Piso Teto", icon: "/static/images/wrench.png" },
+    { id: "Multi Split", nome: "Multi Split", icon: "/static/images/wrench.png" },
+    { id: "VRF", nome: "VRF", icon: "/static/images/wrench.png" },
+    { id: "Cortina de Ar", nome: "Cortina de Ar", icon: "/static/images/wrench.png" },
+    { id: "Split Convencional", nome: "Split Convencional", icon: "/static/images/wrench.png" },
+    { id: "Janela", nome: "Janela", icon: "/static/images/wrench.png" },
+  ];
+
+  const parceiros = [
+    { id: "agratto", logo: "/static/images/parceiros/Logo-agratto.png" },
+    { id: "carrier", logo: "/static/images/parceiros/Logo-carrier.png" },
+    { id: "consul", logo: "/static/images/parceiros/Logo-consul.png" },
+    { id: "daikin", logo: "/static/images/parceiros/Logo-daikin.png" },
+    { id: "elgin", logo: "/static/images/parceiros/Logo-elgin.png" },
+    { id: "fujitsu", logo: "/static/images/parceiros/Logo-fujitsu.png" },
+    { id: "gree", logo: "/static/images/parceiros/Logo-gree.png" },
+    { id: "hitachi", logo: "/static/images/parceiros/Logo-hitachi.png" },
+    { id: "lg", logo: "/static/images/parceiros/Logo-lg.png" },
+    { id: "midea", logo: "/static/images/parceiros/Logo-midea.png" },
+    { id: "electrolux", logo: "/static/images/parceiros/Logo-electrolux.png" },
+    { id: "samsung", logo: "/static/images/parceiros/Logo-samsung.png" },
+    { id: "hisense", logo: "/static/images/parceiros/Logo-hisense.png" },
+    { id: "springer", logo: "/static/images/parceiros/Logo-springer.png" },
+    { id: "tcl", logo: "/static/images/parceiros/Logo-tcl.png" },
+    { id: "ventisol", logo: "/static/images/parceiros/Logo-ventisol.png" },
+  ];
+
+  const produtosFiltrados = React.useMemo(() => {
+    if (!produtos) return [];
+
+    return produtos.filter((p) => {
+      if (categoriaAtiva && p.categoria !== categoriaAtiva) return false;
+      if (parceiroAtivo && p.marca !== parceiroAtivo) return false;
+      return true;
+    });
+  }, [produtos, categoriaAtiva, parceiroAtivo]);
+
   return (
     <>
       <Menu />
@@ -35,6 +83,49 @@ export default function Produtos() {
       </section>
 
       {/* INTRO */}
+
+      <section className={styles.background}>
+        <div className={styles.interno3}>
+          {parceiros.map((p) => (
+            <div
+              key={p.id}
+              className={styles.parceiros}
+              onClick={() => {
+                setParceiroAtivo((prev) => (prev === p.id ? null : p.id));
+                setCategoriaAtiva(null);
+              }}
+              style={{
+                cursor: "pointer",
+                backgroundColor: parceiroAtivo === p.id ? "#d0d0d0" : "",
+              }}
+            >
+              <img src={p.logo} alt={p.id} />
+            </div>
+          ))}
+        </div>
+        <div className={`${styles.interno3} mt-8`}>
+          {categorias.map((cat) => (
+            <div
+              key={cat.id}
+              className={styles.categorias}
+              onClick={() => {
+                setCategoriaAtiva((prev) => (prev === cat.id ? null : cat.id));
+                setParceiroAtivo(null);
+              }}
+              style={{
+                cursor: "pointer",
+                backgroundColor: categoriaAtiva === cat.id ? "#d0d0d0" : "",
+              }}
+            >
+              <img src={cat.icon} alt={cat.nome} />
+              <strong style={{ marginTop: "0.5rem" }}>{cat.nome}</strong>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className={styles.background}></section>
+
       <section className={styles.background}>
         <div className={styles.interno}>
           <h3
@@ -62,8 +153,9 @@ export default function Produtos() {
             <p>Nenhum produto cadastrado.</p>
           )}
 
-          {produtos?.map((produto) => {
-            const imagemUrl = produto.imagem || "/static/images/placeholder.png";
+          {produtosFiltrados.map((produto) => {
+            const imagemUrl =
+              produto.imagem || "/static/images/placeholder.png";
 
             const descricaoLimpa = (produto.descricao || "")
               .replace(/<[^>]+>/g, "")
@@ -77,7 +169,7 @@ export default function Produtos() {
             return (
               <Link
                 key={produto.id}
-                href={`Whatsapp://send?phone=5554999999999&text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20produto%20${produto.nome}`}
+                href={`Whatsapp://send?phone=54981346814&text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20produto%20${produto.nome}`}
                 className="cursor-pointer"
               >
                 <div className="bg-white rounded-lg shadow-md p-4 flex flex-col h-full">

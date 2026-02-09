@@ -47,22 +47,24 @@ export default function Rodape() {
           <h4>Contato</h4>
 
           <p className={styles.contatoItem}>
-            <img src="/phone.png" alt="telefone" />
-            (11) 99999-9999
+            <img src="/phone-branco.png" alt="telefone" />
+            (54) 9 8134-6814
           </p>
 
           <p className={styles.contatoItem}>
-            <img src="/email.png" alt="email" />
-            contato@ags.com.br
+            <img src="/email-branco.png" alt="email" />
+            contato@agsengenhariars.com.br
           </p>
 
           <div className={styles.redes}>
+         {/*
             <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
-              <img src="/facebook.png" alt="Facebook" />
+              <img src="/facebook-branco.png" alt="Facebook" />
             </a>
+         */}
 
-            <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
-              <img src="/Instagram.png" alt="Instagram" />
+            <a href="https://www.instagram.com/agsclimatizacao_/" target="_blank" rel="noreferrer">
+              <img src="/Instagram-branco.png" alt="Instagram" />
             </a>
           </div>
         </div>
