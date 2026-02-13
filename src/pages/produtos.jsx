@@ -20,18 +20,38 @@ export default function Produtos() {
 
   const categorias = [
     {
-      id: "High Wall",
-      nome: "High Wall",
-      icon: "/static/images/wrench.png",
+      id: "Hi Wall",
+      nome: "Hi Wall",
+      icon: "/static/images/hi-wall.png",
     },
-    { id: "InverteR On-Off", nome: "Inverter On-Off", icon: "/static/images/wrench.png" },
-    { id: "Cassete", nome: "Cassete", icon: "/static/images/wrench.png" },
-    { id: "Piso Teto", nome: "Piso Teto", icon: "/static/images/wrench.png" },
-    { id: "Multi Split", nome: "Multi Split", icon: "/static/images/wrench.png" },
-    { id: "VRF", nome: "VRF", icon: "/static/images/wrench.png" },
-    { id: "Cortina de Ar", nome: "Cortina de Ar", icon: "/static/images/wrench.png" },
-    { id: "Split Convencional", nome: "Split Convencional", icon: "/static/images/wrench.png" },
-    { id: "Janela", nome: "Janela", icon: "/static/images/wrench.png" },
+    {
+      id: "InverteR On-Off",
+      nome: "Inverter On-Off",
+      icon: "/static/images/inverter.png",
+    },
+    { id: "Cassete", nome: "Cassete", icon: "/static/images/cassete.png" },
+    {
+      id: "Piso Teto",
+      nome: "Piso Teto",
+      icon: "/static/images/piso-teto.png",
+    },
+    {
+      id: "Multi Split",
+      nome: "Multi Split",
+      icon: "/static/images/multi-split.png",
+    },
+    { id: "VRF", nome: "VRF", icon: "/static/images/vrf.png" },
+    {
+      id: "Cortina de Ar",
+      nome: "Cortina de Ar",
+      icon: "/static/images/cortina-de-ar.png",
+    },
+    {
+      id: "Split Convencional",
+      nome: "Split Convencional",
+      icon: "/static/images/split-convencional.png",
+    },
+    { id: "Janela", nome: "Janela", icon: "/static/images/janela.png" },
   ];
 
   const parceiros = [
@@ -103,7 +123,7 @@ export default function Produtos() {
             </div>
           ))}
         </div>
-        <div className={`${styles.interno3} mt-8`}>
+        <div className={`${styles.interno4} `}>
           {categorias.map((cat) => (
             <div
               key={cat.id}
@@ -117,15 +137,16 @@ export default function Produtos() {
                 backgroundColor: categoriaAtiva === cat.id ? "#d0d0d0" : "",
               }}
             >
-              <img src={cat.icon} alt={cat.nome} />
+                <img src={cat.icon} alt={cat.nome} />
+            
               <strong style={{ marginTop: "0.5rem" }}>{cat.nome}</strong>
             </div>
           ))}
         </div>
       </section>
 
-      <section className={styles.background}></section>
 
+{/*
       <section className={styles.background}>
         <div className={styles.interno}>
           <h3
@@ -143,9 +164,25 @@ export default function Produtos() {
           </p>
         </div>
       </section>
+*/}
 
       {/* LISTAGEM */}
-      <section className={styles.background}>
+      <section className={`${styles.background} mt-[-5rem]`}>
+            <div className={styles.interno}>
+          <h3
+            style={{
+              fontWeight: 600,
+              fontSize: "48px",
+              color: "#e84800",
+              lineHeight: "84px",
+            }}
+          >
+            Nossos Produtos
+          </h3>
+          <p>
+            Confira nossos produtos e soluções pensadas para sua necessidade.
+          </p>
+        </div>
         <div className="w-full max-w-[80rem] mx-auto px-4 grid grid-cols-1 sm:grid-cols-3 gap-6">
           {isLoading && <p>Carregando produtos...</p>}
 

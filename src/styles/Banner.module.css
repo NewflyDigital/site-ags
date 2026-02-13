@@ -11,13 +11,16 @@
   background-position: center;
 }
 
-.overlay {
+/*.overlay {
   position: absolute;
   width: 100%;
   height: 100%;
   background: rgba(0,0,0,0.55);
   backdrop-filter: blur(1px);
-}
+}*/
+
+
+
 
 .interno {
   position: relative;
@@ -94,6 +97,35 @@
 }
 
 .card p span {
+  color: #ff4500;
+}
+
+.card2 {
+  width: 25rem;
+  background: white;
+  color: black;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+  transition: transform .3s;
+}
+
+.card2:hover {
+  transform: translateY(-5px);
+}
+
+.card2 img {
+  width: 2.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.card2 h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: .8rem;
+}
+
+.card2 p span {
   color: #ff4500;
 }
 

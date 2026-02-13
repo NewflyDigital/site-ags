@@ -85,9 +85,16 @@ export default function Home() {
           <div className={styles.sobreLeft}>
             <h4 className={styles.sobreMiniTitulo}>SOBRE A AGS</h4>
 
+            {/*
             <h1 className={styles.sobreTitulo}>
               Expertise em <br />
               <span>Ar Condicionado!</span>
+            </h1>
+            */}
+
+            <h1 className={styles.sobreTitulo}>
+              Clima sob controle, <br />
+              <span>conforto sem limites</span>
             </h1>
 
             <p>
@@ -124,7 +131,15 @@ export default function Home() {
               </li>
             </ul>
 
-            <button className={styles.sobreBotao}>Entre em Contato</button>
+            <Link
+              legacyBehavior
+              href="https://api.whatsapp.com/send?phone=5554981346814&text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es"
+              passHref
+            >
+              <a target="_blank" className={styles.sobreBotao}>
+                Entre em Contato
+              </a>
+            </Link>
           </div>
 
           {/* LADO DIREITO */}
@@ -158,7 +173,10 @@ export default function Home() {
           {/* CARD 1 */}
           <div className={styles.cardServico}>
             <div className={styles.cardImg}>
-              <img src="/static/images/servicos-Instalacao.jpg" alt="Serviço 1" />
+              <img
+                src="/static/images/servicos-Instalacao.jpg"
+                alt="Serviço 1"
+              />
               <div className={styles.cardIcon}>
                 <img src="/static/images/wrench-branco.png" alt="Instalação " />
               </div>
@@ -174,7 +192,10 @@ export default function Home() {
           {/* CARD 2 */}
           <div className={styles.cardServico}>
             <div className={styles.cardImg}>
-              <img src="/static/images/servicos-Manutencao-Preventiva.jpg" alt="Serviço 2" />
+              <img
+                src="/static/images/servicos-Manutencao-Preventiva.jpg"
+                alt="Serviço 2"
+              />
               <div className={styles.cardIcon}>
                 <img
                   src="/static/images/setting.png"
@@ -193,7 +214,10 @@ export default function Home() {
           {/* CARD 3 */}
           <div className={styles.cardServico}>
             <div className={styles.cardImg}>
-              <img src="/static/images/servicos-Manutencao-Corretiva.jpg" alt="Serviço 3" />
+              <img
+                src="/static/images/servicos-Manutencao-Corretiva.jpg"
+                alt="Serviço 3"
+              />
               <div className={styles.cardIcon}>
                 <img
                   src="/static/images/thermometer.png"
@@ -218,7 +242,10 @@ export default function Home() {
         <div className={styles.empresasContainer}>
           {/* IMAGEM ESQUERDA */}
           <div className={styles.empresasImg}>
-            <img src="/static/images/Projetos-especiais.png" alt="Grandes empresas" />
+            <img
+              src="/static/images/Projetos-especiais.png"
+              alt="Grandes empresas"
+            />
           </div>
 
           {/* TEXTO DIREITO */}
@@ -259,9 +286,15 @@ export default function Home() {
               </li>
             </ul>
 
-            <button className={styles.empresasBotao}>
-              Solicitar Orçamento Corporativo
-            </button>
+            <Link
+              legacyBehavior
+              href="https://api.whatsapp.com/send?phone=5554981346814&text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es"
+              passHref
+            >
+              <a target="_blank" className={styles.empresasBotao}>
+                Solicitar Orçamento Corporativo
+              </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -321,10 +354,7 @@ export default function Home() {
           </div>
           <div className={styles.segmentoItem}>
             <div className={styles.cardIcon2}>
-              <img
-                src="/static/images/saude.png"
-                alt="Manutenção Preventiva"
-              />
+              <img src="/static/images/saude.png" alt="Manutenção Preventiva" />
             </div>
             <h4>Saúde</h4>
             <p>Clínicas e hospitais</p>
@@ -338,6 +368,16 @@ export default function Home() {
             </div>
             <h4>Educação</h4>
             <p>Escolas e univercidades</p>
+          </div>
+          <div className={styles.segmentoItem}>
+            <div className={styles.cardIcon2}>
+              <img
+                src="/static/images/civil.png"
+                alt="Construções e edifícios"
+              />
+            </div>
+            <h4>Civil</h4>
+            <p>Construções e edifícios</p>
           </div>
         </div>
 
@@ -363,8 +403,8 @@ export default function Home() {
           <div className={styles.depoimentoCard}>
             <h3>João Silva</h3>
             <p>
-              &quot;Excelente serviço! A equipe da AGS instalou meu ar-condicionado
-              com rapidez e eficiência.&quot;
+              &quot;Excelente serviço! A equipe da AGS instalou meu
+              ar-condicionado com rapidez e eficiência.&quot;
             </p>
           </div>
 
@@ -379,16 +419,16 @@ export default function Home() {
           <div className={styles.depoimentoCard}>
             <h3>Pedro Oliveira</h3>
             <p>
-              &quot;Profissionais excelentes! Instalaram o sistema de climatização da
-              minha empresa com perfeição.&quot;
+              &quot;Profissionais excelentes! Instalaram o sistema de
+              climatização da minha empresa com perfeição.&quot;
             </p>
           </div>
 
           <div className={styles.depoimentoCard}>
             <h3>Ana Costa</h3>
             <p>
-              &quot;Tive um problema urgente com o ar-condicionado e a equipe da AGS
-              resolveu rapidamente.&quot;
+              &quot;Tive um problema urgente com o ar-condicionado e a equipe da
+              AGS resolveu rapidamente.&quot;
             </p>
           </div>
         </div>

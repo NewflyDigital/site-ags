@@ -11,7 +11,7 @@ export default function Rodape() {
         <div className={styles.coluna}>
           <Link href="/">
             <img
-              src="/static/images/logo.png"
+              src="/static/images/logo-branco.png"
               alt="Logo"
               className={styles.logoAGS}
             />

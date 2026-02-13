@@ -126,6 +126,7 @@
   color: white;
   background: linear-gradient(90deg, #e84800, #ff7800);
   transition: 0.2s ease;
+  font-family: Montserrat;
 }
 
 .colForm button:hover {

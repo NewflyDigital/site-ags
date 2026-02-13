@@ -128,6 +128,7 @@
   color: #fff;
   background: linear-gradient(90deg, #e84800, #ff7800);
   transition: 0.3s ease;
+  text-align: center;
 }
 
 .sobreBotao:hover {
@@ -389,6 +390,8 @@
   background-origin: border-box;
   background-clip: padding-box, border-box;
   border: 2px solid #e84800;
+
+  text-align: center;
 }
 
 .empresasBotao:hover {

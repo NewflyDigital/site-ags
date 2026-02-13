@@ -77,6 +77,19 @@
   position: relative;
 }
 
+.interno4 {
+  width: 100%;
+  max-width: 95%;
+  margin-top: 12px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+}
+
+
 .parceiros {
   width: 100%;
   max-width: 12rem;
@@ -103,15 +116,16 @@
 }
 
 
-.categorias {
+.categorias2 {
   width: 100%;
-  max-width: 12rem;
+  max-width: 10rem;
+  height: 8rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #ff4b2b;
-  padding: 1rem 3rem;
+  padding: 1rem 1rem;
   border-radius: 1rem;
   margin: 0.5rem 0.5rem;
   transition: 0.5s ease-out;
@@ -119,15 +133,49 @@
   font-size: 14px;
 }
 
-.categorias img {
+.categorias2 img {
   width: 100%;
   max-width: 3rem;
+  margin-bottom: 1rem;
 }
 
-.categorias:hover {
+.categorias2:hover {
   background-color: #e63926;
   transition: 0.5s ease-in-out;
   box-shadow: 0px 4px 10px #2a2a2a8e ;
+}
+
+
+.categorias {
+  width: 100%;
+  max-width: 10.5rem;
+  height: 12rem;
+  background: #ffffff;
+  border: 1px solid #c5c5c5;
+  padding: 2rem 30px;
+  border-radius: 20px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: 0.3s ease;
+  color: #e84800;
+}
+
+.categorias .cardIcon img {
+  width: 100%;
+  height: 100%;
+  max-width: 30px;
+  max-height: 30px;
+}
+
+.categorias:hover {
+  border-color: #e84800;
+  color: #e84800;
+  box-shadow: 10px 10px 30px rgba(232, 72, 0, 0.2);
+  transform: translateY(-5px);
 }
 
 /* @media Menu Mobile*/

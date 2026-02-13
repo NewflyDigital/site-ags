@@ -38,40 +38,45 @@ function Menu() {
 
   return (
     <div id={styles.menuheader} className={styles.header}>
-      <div className={styles.interno}>
-        {/* LOGO */}
-        <Link href="/" passHref>
-          <img
-            src="/static/images/logo.png"
-            alt="Logo"
-            className={styles.logo}
-          />
-        </Link>
+      {/* FAIXA VERMELHA (LOGO) */}
+      <div className={styles.topBar}>
+          <Link href="/" passHref>
+            <img
+              src="/static/images/logo-branco.png"
+              alt="Logo"
+              className={styles.logo}
+            />
+          </Link>
+      </div>
 
-        {/* MENU PRINCIPAL */}
-        <ul
-          id={`${styles.nav}`}
-          className={`${styles.menu} ${styles.navbar} ${styles.a2}`}
-        >
-          <li className={styles.li}>
-            <Link href="/" passHref>
-              Início
-            </Link>
-          </li>
+      <div className={styles.bottomBar}>
+        <div className={styles.interno}>
+          {/* LOGO */}
 
-          <li className={styles.li}>
-            <Link href="/sobre" passHref>
-              Sobre
-            </Link>
-          </li>
+          {/* MENU PRINCIPAL */}
+          <ul
+            id={`${styles.nav}`}
+            className={`${styles.menu} ${styles.navbar} ${styles.a2}`}
+          >
+            <li className={styles.li}>
+              <Link href="/" passHref>
+                Início
+              </Link>
+            </li>
 
-          <li className={styles.li}>
-            <Link href="/servicos" passHref>
-              Serviços
-            </Link>
-          </li>
+            <li className={styles.li}>
+              <Link href="/sobre" passHref>
+                Sobre
+              </Link>
+            </li>
 
-          {/*SubMenu Modelo
+            <li className={styles.li}>
+              <Link href="/servicos" passHref>
+                Serviços
+              </Link>
+            </li>
+
+            {/*SubMenu Modelo
       
           <li
             className={styles.li}
@@ -94,34 +99,39 @@ function Menu() {
           </li>
           */}
 
-          <li className={styles.li}>
-            <Link href="/produtos" passHref>
-              Produtos
+            <li className={styles.li}>
+              <Link href="/produtos" passHref>
+                Produtos
+              </Link>
+            </li>
+            <li className={styles.li}>
+              <Link href="/#contato" passHref>
+                Contato
+              </Link>
+            </li>
+          </ul>
+
+          {/* LADO DIREITO (TELEFONE + BOTÃO) */}
+          <div className={styles.right}>
+            <div className={styles.phone}>
+              <img src="/phone.png" alt="Telefone" />
+              <span>(54) 9 8134-6814</span>
+            </div>
+
+            <Link
+              href="https://api.whatsapp.com/send?phone=5554981346814&text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es"
+              passHref
+            >
+              <button className={styles.btn_orcamento}>
+                Solicite um Orçamento
+              </button>
             </Link>
-          </li>
-          <li className={styles.li}>
-            <Link href="/#contato" passHref>
-              Contato
-            </Link>
-          </li>
-        </ul>
 
-        {/* LADO DIREITO (TELEFONE + BOTÃO) */}
-        <div className={styles.right}>
-          <div className={styles.phone}>
-            <img src="/phone.png" alt="Telefone" />
-            <span>(54) 9 8134-6814</span>
-          </div>
-
-          <Link href="https://api.whatsapp.com/send?phone=5554981346814&text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es" passHref>
-            <button className={styles.btn_orcamento}>Orçamento Grátis</button>
-          </Link>
-
-          {/* BOTÃO MOBILE */}
-          <button id={`${styles.btn_mobile}`}>
-            <span id={`${styles.hamburguer}`}></span>
-          </button>
-          {/*
+            {/* BOTÃO MOBILE */}
+            <button id={`${styles.btn_mobile}`}>
+              <span id={`${styles.hamburguer}`}></span>
+            </button>
+            {/*
         <ul className={styles.social_media}>
             <li>
               <Link
@@ -144,6 +154,7 @@ function Menu() {
             </li>
           </ul>
 */}
+          </div>
         </div>
       </div>
     </div>
