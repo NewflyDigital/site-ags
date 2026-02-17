@@ -43,7 +43,7 @@
   background: #ffffff; /* branco */
   display: flex;
   justify-content: center;
-  padding: 1.7rem 0rem;
+  padding: 1.8rem 2rem;
   box-shadow: 0 4px 25px rgba(0,0,0,0.08);
 }
 
@@ -78,7 +78,7 @@
   align-items: center;
   justify-content: center;
   height: auto;
-  gap: 2.5rem;
+  gap: 2rem;
 }
 
 .navbar li {

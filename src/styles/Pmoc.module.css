@@ -2,14 +2,14 @@
    BANNER TOPO
 ============================ */
 .backgroundimg {
-  background-image: url(/static/images/banner-interno.jpg);
+  background-image: url(/static/images/banner-interno-pmoc.jpg);
   background-position: center;
   background-size: cover;
-  height: 69vh;
+  height: 60vh;
 
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   color: #ffffff;
 }
 
@@ -38,13 +38,43 @@
   width: 5rem;
 }
 
+/* ============================
+   LISTAS DE CONTEÚDO
+============================ */
+.lista {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  text-align: left;
+}
+
+.lista li {
+  position: relative;
+  padding-left: 2rem;
+  font-size: 16px;
+  color: #464646;
+}
+
+/* Ícone personalizado */
+.lista li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #e84800;
+  font-weight: bold;
+}
 
 /* ============================
-   SEÇÕES BASE
+   SEÇÃO BASE
 ============================ */
 .background {
-  background-color: #ffffff;
+  width: 100%;
   padding: 4rem 1.5rem;
+  background-color: #ffffff;
 
   display: flex;
   justify-content: center;
@@ -57,12 +87,12 @@
 
   display: flex;
   justify-content: space-between;
-  gap: 2rem;
+  align-items: center;
+  gap: 3rem;
 }
 
-
 /* ============================
-   TEXTO PRINCIPAL
+   BLOCOS
 ============================ */
 .box {
   width: 100%;
@@ -70,64 +100,63 @@
 
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+
+  content: "●";
+  font-size: 10px;
+  top: 6px;
+}
+
+.box h4 {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 1rem 0 1.5rem 0;
+  color: #555;
 }
 
 .box h3 {
-  font-size: 54px;
+  font-size: 48px;
   font-weight: 700;
-  line-height: 3.5rem;
+  line-height: 3.2rem;
 
   background: linear-gradient(90deg, #e84800, #ff7800);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .box p {
   font-size: 16px;
   line-height: 1.7;
   color: #464646;
+  margin-bottom: 1rem;
 }
-
 
 /* ============================
-   MISSÃO / VISÃO / VALORES
+   IMAGENS
 ============================ */
-.valores {
+.pmocimg {
   width: 100%;
-  max-width: 24rem;
-  height: 17rem;
-
-  padding: 3rem 2rem;
-  border-radius: 2rem 2rem 2rem 0;
-
-  display: flex;
-  flex-direction: column;
-
-  border: 1px solid #e84800;
-  transition: 0.3s ease;
+  border-radius: 0.5rem;
 }
 
-.valores h3 {
+.imagemhorizontal {
+  width: 100%;
+  border-radius: 0.5rem;
+  margin-top: -5rem;
+}
+
+.pmoc {
+  width: 100%;
+  max-width: 30rem;
+}
+
+.servicos {
+  width: 100%;
+  max-width: 7rem;
   margin-bottom: 1rem;
-  font-size: 22px;
-  color: #e84800;
 }
-
-.valores p {
-  font-size: 16px;
-  color: #464646;
-}
-
-.valores:hover {
-  background: linear-gradient(135deg, #e84800, #ff7800);
-  border: none;
-}
-
-.valores:hover h3,
-.valores:hover p {
-  color: #ffffff;
-}
-
 
 /* ============================
    CTA FINAL
@@ -156,13 +185,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 
   color: #555555;
   padding-bottom: 4rem;
 }
 
 .box3 h2 {
-  font-size: 48px;
+  font-size: 42px;
   font-weight: 600;
   text-align: center;
 }
@@ -209,23 +239,16 @@
   margin-top: 1rem;
 }
 
-
 .box3 img {
   width: 1rem;
 }
-
-.anchor {
-  scroll-margin-top: 100px; /* altura do menu */
-}
-
 
 /* ============================
    RESPONSIVO
 ============================ */
 @media (max-width: 960px) {
-
   .backgroundimg {
-    height: 60vh;
+    height: 50vh;
     text-align: center;
   }
 
@@ -235,36 +258,33 @@
 
   .background {
     padding: 3rem 1.5rem;
-    flex-direction: column;
   }
 
   .interno {
     flex-direction: column;
-    align-items: center;
+    text-align: center;
   }
 
   .box {
     max-width: 100%;
-    text-align: center;
+    align-items: center;
   }
 
   .box h3 {
-    font-size: 42px;
-    line-height: 3rem;
+    font-size: 36px;
+    line-height: 2.8rem;
   }
 
-  .valores {
-    max-width: 100%;
-    margin-bottom: 1rem;
+  .box p {
+    font-size: 15px;
   }
 
-  .background3 {
-    height: 70vh;
-    margin-bottom: -10rem;
+  .box ul {
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
-  .box3 h2 {
-    font-size: 34px;
-    padding: 0 1rem;
+  .servicos {
+    max-width: 6rem;
   }
 }

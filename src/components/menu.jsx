@@ -76,6 +76,12 @@ function Menu() {
               </Link>
             </li>
 
+            <li className={styles.li}>
+              <Link href="/pmoc" passHref>
+                PMOC
+              </Link>
+            </li>
+
             {/*SubMenu Modelo
       
           <li
