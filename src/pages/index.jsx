@@ -3,6 +3,7 @@ import Banner from "../components/banner";
 import Menu from "../components/menu";
 import styles from "../styles/Index.module.css";
 import Rodape from "../components/rodape";
+import RodapeNewfly from "../components/rodape-newfly";
 import ContatoSection from "../components/contactSection";
 import Whats from "../components/whats";
 import { ReadAll as ReadArtigos } from "../services/produtos";
@@ -97,7 +98,7 @@ export default function Home() {
               <span>conforto sem limites</span>
             </h1>
 
-            <p>
+            <p className=" text-[#1e1e1e]">
               Na <strong>AGS</strong>, nossa paixão pelo que fazemos é o nosso
               combustível. Somos muito mais do que uma empresa de climatização;
               somos parceiros dedicados a proporcionar{" "}
@@ -535,6 +536,7 @@ export default function Home() {
       <a id="contato">&nbsp;</a>
       <ContatoSection />
       <Rodape />
+      <RodapeNewfly />
       <Whats />
       <Dialog
         fullWidth={true}

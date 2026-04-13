@@ -10,7 +10,6 @@
   --laranja-border: #ffb899;
 }
 
-
 html,
 body {
   padding: 0;
@@ -177,7 +176,7 @@ h4 {
 }
 
 .swal2-container {
-  z-index: 11E1E1E00000 !important;
+  z-index: 11e1E1E00000 !important;
 }
 
 .center-div {

@@ -40,13 +40,13 @@ function Menu() {
     <div id={styles.menuheader} className={styles.header}>
       {/* FAIXA VERMELHA (LOGO) */}
       <div className={styles.topBar}>
-          <Link href="/" passHref>
-            <img
-              src="/static/images/logo-branco.png"
-              alt="Logo"
-              className={styles.logo}
-            />
-          </Link>
+        <Link href="/" passHref>
+          <img
+            src="/static/images/logo-branco.png"
+            alt="Logo"
+            className={styles.logo}
+          />
+        </Link>
       </div>
 
       <div className={styles.bottomBar}>
@@ -120,7 +120,7 @@ function Menu() {
           {/* LADO DIREITO (TELEFONE + BOTÃO) */}
           <div className={styles.right}>
             <div className={styles.phone}>
-              <img src="/phone.png" alt="Telefone" />
+              <img src="/phone-branco.png" alt="Telefone" />
               <span>(54) 9 8134-6814</span>
             </div>
 

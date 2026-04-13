@@ -11,7 +11,7 @@ function Banner() {
         <div className={styles.left}>
           <div className={styles.stars}>★★★★★</div>
 
-          <h1 className="text-[#333333]">
+          <h1 className="text-[#ffffff]">
             AGS Climatização
             <br />
             <span> Inteligência que transforma o ar</span>
